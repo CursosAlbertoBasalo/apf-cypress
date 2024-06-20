@@ -1,0 +1,16 @@
+{
+  "name": "apf-cypress",
+  "version": "1.0.0",
+  "description": "Laboratorio de pruebas automatizadas con Cypress para ApFutura",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.12.0"
+  }
+}

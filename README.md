@@ -14,4 +14,8 @@ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslin
 npm i -D @types/node
 # add cypress open to start script and run it
 npm start
+# js -> ts
+npx tsc --init --types cypress --lib dom,es6
 ```
+
+https://medium.com/tech-learn-share/set-up-typescript-in-your-cypress-project-0063e3c365a5
