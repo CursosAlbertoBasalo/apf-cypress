@@ -31,7 +31,7 @@ describe('The Activity Bookings home page', () => {
       .contains('Activity Bookings'); // assert
   });
 
-  it(`should have a link to ${DEVELOPER_URL} and an italic element with '${expectedAppName}' content a link with css class 'secondary`, () => {
+  it(`should have a link to ${DEVELOPER_URL} and an italic element with '${expectedAppName}' content a link with css class 'secondary'`, () => {
     cy.get(`a[href="${DEVELOPER_URL}"]`) // act
       .should('exist') // assert
     cy.get('i') // act
