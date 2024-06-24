@@ -20,3 +20,7 @@ npm start
 
 https://medium.com/tech-learn-share/set-up-typescript-in-your-cypress-project-0063e3c365a5
 https://docs.cypress.io/guides/tooling/typescript-support
+
+https://github.com/CursosAlbertoBasalo/apf-cypress
+https://github.com/AlbertoBasalo/ng-lab
+https://github.com/AlbertoBasalo/api_bun
