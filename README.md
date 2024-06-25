@@ -2,6 +2,12 @@
 
 Laboratorio de pruebas automatizadas con Cypress para ApFutura
 
+- https://github.com/CursosAlbertoBasalo/apf-cypress
+
+- https://github.com/AlbertoBasalo/ng-lab
+
+- https://github.com/AlbertoBasalo/api_bun
+
 ```bash
 # create new npm project
 npm init -y
@@ -18,9 +24,6 @@ npm start
 # js -> ts
 ```
 
-https://medium.com/tech-learn-share/set-up-typescript-in-your-cypress-project-0063e3c365a5
-https://docs.cypress.io/guides/tooling/typescript-support
+- https://medium.com/tech-learn-share/set-up-typescript-in-your-cypress-project-0063e3c365a5
 
-https://github.com/CursosAlbertoBasalo/apf-cypress
-https://github.com/AlbertoBasalo/ng-lab
-https://github.com/AlbertoBasalo/api_bun
+- https://docs.cypress.io/guides/tooling/typescript-support

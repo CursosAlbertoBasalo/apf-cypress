@@ -36,7 +36,7 @@ describe('The register form', () => {
   });
   context('when the users fills the form correctly', () => {
     beforeEach(() => {
-      cy.get('#username').clear().type('John').blur();
+      cy.get('#username').focus().clear().type('John').blur();
       cy.get("[type='email']").clear().type('john.doe@acme.com').blur();
       cy.get("[name='password']").first().clear().type('1234a').blur();
       cy.get('#confirm').clear().type('1234a').blur();
