@@ -7,7 +7,6 @@
 describe('Given an already registered and logged user', () => {
   beforeEach(() => {
     cy.loginUI();
-    //cy.loginUICredentials('', '');
     cy.visit('');
   })
   context('When clicks on new activity', () => {
