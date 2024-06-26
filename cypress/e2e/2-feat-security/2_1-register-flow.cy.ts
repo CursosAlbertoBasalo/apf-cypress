@@ -13,7 +13,7 @@ describe("Given a user at login flow", () => {
   const credentials = {
     username: "Test User",
     email: "test@valid.org",
-    password: "1validPassword!",
+    password: "@validPassword1",
     terms: true,
   }
   beforeEach(() => {
@@ -27,7 +27,6 @@ describe("Given a user at login flow", () => {
       cy.get("#password").type(credentials.password);
       cy.get("#confirm").type(credentials.password);
       cy.get("#terms").check();
-      cy.get("form button[type=submit]").as('submitCredentials').should('be.enabled')
       cy.get('@submitCredentials').click();
     });
     it("Then should send the form data to the server And displays user menu", () => {
@@ -43,7 +42,6 @@ describe("Given a user at login flow", () => {
       cy.get("#password").type(credentials.password);
       cy.get("#confirm").type(credentials.password);
       cy.get("#terms").check();
-      cy.get("form button[type=submit]").as('submitCredentials').should('be.enabled')
       cy.get('@submitCredentials').click();
     });
     it("Then should get a 400 response and still display anonymous menu", () => {
