@@ -19,6 +19,7 @@ describe("Given a user at login flow", () => {
   beforeEach(() => {
     cy.intercept('POST', registerUrl).as('postRegister')
     cy.visit('/auth/register')
+    cy.get("form button[type=submit]").as('submitCredentials')
   })
   context("When types valid credentials", () => {
     beforeEach(() => {
