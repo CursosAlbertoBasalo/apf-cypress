@@ -1,0 +1,6 @@
+declare namespace Cypress {
+  interface Chainable {
+    loginUI(): Chainable<null>;
+    loginUICredentials(email: string, password: string): Chainable<null>;
+  }
+}
