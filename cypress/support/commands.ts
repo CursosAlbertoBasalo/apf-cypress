@@ -2,13 +2,10 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 /// <reference types="cypress" />
 
-import { loginUI, loginUICredentials } from "./login.functions"
+import { loginUI, loginUICredentials, typeBlur } from "./login.functions"
 
 Cypress.Commands.add('loginUI', loginUI)
 Cypress.Commands.add('loginUICredentials', loginUICredentials)
-Cypress.Commands.add('typeBlur',
-  (selector: string, value: unknown) => {
-    cy.get(selector).clear().type(value as string).blur()
-  }
-)
+Cypress.Commands.add('typeBlur', typeBlur)
+
 

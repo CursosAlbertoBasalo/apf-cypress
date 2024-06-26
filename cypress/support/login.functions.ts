@@ -13,3 +13,7 @@ export function loginUI() {
   const credentials: any = Cypress.env("testUser")
   loginUICredentials(credentials.email, credentials.password)
 }
+
+export function typeBlur(selector: string, value: unknown) {
+  cy.get(selector).clear().type(value as string).blur()
+}

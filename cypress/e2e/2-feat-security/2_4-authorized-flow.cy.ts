@@ -1,3 +1,5 @@
+// automate with cy commands and npm scripts
+// "test:auth": "cypress run --config-file production.config.ts > temp/test-results.txt",
 
 /**
  * Given an already registered and logged user
