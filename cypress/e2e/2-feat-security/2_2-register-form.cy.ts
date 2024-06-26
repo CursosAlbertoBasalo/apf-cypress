@@ -30,11 +30,11 @@ describe("Given a user at login flow", () => {
       cy.get("#confirm").type(credentials.password + 'distinct');
       // no terms checked
     });
-    it.skip("Then should have disabled submit button", () => {
+    it("Then should have disabled submit button", () => {
       cy.get('@submitCredentials').should('be.disabled')
     });
   });
-  context.skip("When types valid credentials", () => {
+  context("When types valid credentials", () => {
     beforeEach(() => {
       cy.get("#username").type(credentials.username);
       cy.get("#email").type(credentials.email);

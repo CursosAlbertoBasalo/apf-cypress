@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Laboratorio de pruebas automatizadas con Cypress para ApFutura",
   "scripts": {
+    "cypress": "cypress",
     "start": "cypress open --e2e --browser chrome",
-    "test": "cypress run --config-file cypress.production.config.ts"
+    "test": "cypress run --config-file cypress.production.config.ts",
+    "test:auth": "cypress run --config-file cypress.production.config.ts --spec '**/2_*.cy.ts' > cypress/reports/auth.txt "
   },
   "keywords": [],
   "author": "",

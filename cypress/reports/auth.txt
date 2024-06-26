@@ -1,0 +1,207 @@
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.12.0                                                                        │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v22.1.0 (C:\Program Files\nodejs\node.exe)                                     │
+  │ Specs:          4 found (2_1-register-flow.cy.ts, 2_2-register-form.cy.ts, 2_3-login-flow.cy.t │
+  │                 s, 2_4-authorized-flow.cy.ts)                                                  │
+  │ Searched:       C:\code\apf-cypress\**\2_*.cy.ts                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2_1-register-flow.cy.ts                                                         (1 of 4)
+
+
+  Given a user at login flow
+    When types valid credentials
+      1) Then should send the form data to the server And displays user menu
+    When types invalid credentials
+      √ Then should get a 400 response and still display anonymous menu (1547ms)
+
+
+  1 passing (8s)
+  1 failing
+
+  1) Given a user at login flow
+       When types valid credentials
+         Then should send the form data to the server And displays user menu:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -400
+      +201
+      
+      at Context.eval (webpack://apf-cypress/./cypress/e2e/2-feat-security/2_1-register-flow.cy.ts:35:0)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     2_1-register-flow.cy.ts                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\code\apf-cypress\cypress\reports\screenshots\2_1-register-flow.cy.ts\Given a      (1280x720)
+     user at login flow -- When types valid credentials -- Then should send the form                
+     data to the server And displays user menu (failed).png                                         
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF                                                     
+  -  Finished compressing: 0 seconds                                                 
+
+  -  Video output: C:\code\apf-cypress\cypress\reports\videos\2_1-register-flow.cy.ts.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2_2-register-form.cy.ts                                                         (2 of 4)
+
+
+  Given a user at login flow
+    When types invalid credentials
+      √ Then should have disabled submit button (1638ms)
+    When types valid credentials
+      √ Then should have enable the submit button (1516ms)
+    When sends valid credentials
+      √ Then should send the form data to the server  (1453ms)
+
+
+  3 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     2_2-register-form.cy.ts                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF                                                     
+  -  Finished compressing: 0 seconds                                                 
+
+  -  Video output: C:\code\apf-cypress\cypress\reports\videos\2_2-register-form.cy.ts.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2_3-login-flow.cy.ts                                                            (3 of 4)
+
+
+  Given a user at login flow
+    when sends valid credentials
+      √ Then should hide login menu (1223ms)
+    When sends invalid credentials
+      √ Then should still display anonymous menu (1030ms)
+
+
+  2 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     2_3-login-flow.cy.ts                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF                                                     
+  -  Finished compressing: 0 seconds                                                 
+
+  -  Video output: C:\code\apf-cypress\cypress\reports\videos\2_3-login-flow.cy.ts.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2_4-authorized-flow.cy.ts                                                       (4 of 4)
+
+
+  Given an already registered and logged user
+    When clicks on new activity
+      √ Then should display the new activity form (1540ms)
+
+
+  1 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     2_4-authorized-flow.cy.ts                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF                                                     
+  -  Finished compressing: 0 seconds                                                 
+
+  -  Video output: C:\code\apf-cypress\cypress\reports\videos\2_4-authorized-flow.cy.ts.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  2_1-register-flow.cy.ts                  00:07        2        1        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2_2-register-form.cy.ts                  00:04        3        3        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2_3-login-flow.cy.ts                     00:02        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2_4-authorized-flow.cy.ts                00:01        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 4 failed (25%)                      00:16        8        7        1        -        -  
+

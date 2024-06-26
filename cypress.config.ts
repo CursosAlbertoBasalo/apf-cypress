@@ -6,6 +6,12 @@ export default defineConfig({
     viewportWidth: 1280,
     viewportHeight: 1024,
     defaultCommandTimeout: 4000,
+    screenshotOnRunFailure: false,
+    video: false,
+    videoCompression: 32,
+    videosFolder: 'cypress/reports/videos',
+    screenshotsFolder: 'cypress/reports/screenshots',
+    trashAssetsBeforeRuns: true,
     env: {
       apiUrl: 'http://localhost:3000/api',
       testUser: {
