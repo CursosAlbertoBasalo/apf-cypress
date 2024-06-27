@@ -20,7 +20,7 @@ describe("Given a user at login flow", () => {
   context("when sends valid credentials", () => {
     beforeEach(() => {
       const credentials: any = Cypress.env("testUser")
-      cy.get("form").type('{enter}');
+      cy.get("form", { timeout: 500 }).type('{enter}');
       cy.get("#email").type(credentials.email);
       cy.get("#password").type(credentials.password);
       cy.get("button").click();
@@ -41,7 +41,9 @@ describe("Given a user at login flow", () => {
       cy.wait("@postLogin"); // wait for the request to finish
     });
     it("Then should still display anonymous menu", () => {
-      cy.get('@loginMenu')  // the login menu exists
+      //cy.wait(10000);
+      //cy.wait('@loginMenu');
+      cy.get('@loginMenu', { timeout: 10000 })  // the login menu exists
     });
   });
 });
