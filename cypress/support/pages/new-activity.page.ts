@@ -7,6 +7,12 @@ export class NewActivityPage {
     cy.visit('/activity');
   }
 
+  // form = cy.get('form');
+
+  getForm() {
+    return cy.get('form');
+  }
+
   typeName(name: string) {
     //cy.get('#name').clear().type(name + '{enter}').blur()
     this.type("#name", name);
@@ -19,5 +25,9 @@ export class NewActivityPage {
 
   type(controlId: string, value: unknown) {
     cy.typeBlur(controlId, value);
+  }
+
+  submit() {
+    cy.get('form button').click({ force: true });
   }
 }
