@@ -27,3 +27,5 @@ npm start
 - https://medium.com/tech-learn-share/set-up-typescript-in-your-cypress-project-0063e3c365a5
 
 - https://docs.cypress.io/guides/tooling/typescript-support
+
+- https://medium.com/geoman-blog/testing-maps-e2e-with-cypress-ba9e5d903b2b
