@@ -17,6 +17,7 @@ describe('Given a user with a token', () => {
       body: credentials
     }).its('body').its('accessToken').then(result => {
       accessToken = result;
+      cy.setCookie('', result)
       cy.log(accessToken);
     })
   })

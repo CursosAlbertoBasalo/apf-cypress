@@ -18,3 +18,9 @@ import './commands.ts';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+// export let token = '';
+// function getToken() {
+//   token = localStorage.getItem('') || '';
+// }
+
+// getToken();
