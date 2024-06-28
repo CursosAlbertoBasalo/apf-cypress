@@ -14,11 +14,11 @@ export function loginUI() {
   loginUICredentials(credentials.email, credentials.password);
 }
 
-export function login() {
+export function login(user: string) {
   const loginFunction = () => {
     const apiUrl = Cypress.env('apiUrl');
     const url = `${apiUrl}/login`;
-    const body: any = Cypress.env('testUser');
+    const body: any = Cypress.env(user || 'testUser');
     cy.request({ method: 'POST', url, body })
       .its('body')
       .then((userAccessToken) => {
@@ -35,5 +35,5 @@ export function login() {
   const sessionOptions = {
     cacheAcrossSpecs: true, validate: validateFunction
   };
-  cy.session('login', loginFunction, sessionOptions);
+  cy.session('login_' + user, loginFunction, sessionOptions);
 }

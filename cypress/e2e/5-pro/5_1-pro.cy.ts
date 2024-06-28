@@ -1,6 +1,6 @@
 describe('Pro 5_1', () => {
   beforeEach(() => {
-    cy.login();
+    cy.login('testUser');
     cy.visit('');
   });
   it('should display the user email', () => {
